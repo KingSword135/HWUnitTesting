@@ -6,17 +6,20 @@ import static org.junit.jupiter.api.Assertions.*;
 class EmployeeTest {
 
     @Test
-    void getSevenWeekendPay() {
+    void getSevenHrsWeekendPay() {
         Employee e = new Employee("A",10);
         e.setHours(5,7);
         Assertions.assertEquals(e.getPay(),70);
     }
 
     @Test
-    void getSixWeekendPay() {
+    void getFourDayLessThan40HrsPay() {
         Employee e = new Employee("A",10);
-        e.setHours(5,6);
-        Assertions.assertEquals(e.getPay(),60);
+        e.setHours(0,8);
+        e.setHours(1,8);
+        e.setHours(2,8);
+        e.setHours(3,8);
+        Assertions.assertEquals(e.getPay(),320);
     }
 
 
