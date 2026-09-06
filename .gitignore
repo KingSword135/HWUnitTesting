@@ -28,3 +28,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+lib/junit-platform-console-standalone-1.14.4.jar
