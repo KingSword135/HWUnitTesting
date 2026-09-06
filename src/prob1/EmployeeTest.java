@@ -16,7 +16,7 @@ class EmployeeTest {
     void getSevenHrsWeekendPay() {
         Employee e = new Employee("A",10);
         e.setHours(5,7);
-        Assertions.assertEquals(70, e.getPay());
+        Assertions.assertEquals(140, e.getPay());
     }
 
     @Test
@@ -36,7 +36,7 @@ class EmployeeTest {
         e.setHours(1,12);
         e.setHours(2,12);
         e.setHours(3,12);
-        Assertions.assertEquals(480, e.getPay());
+        Assertions.assertEquals(520, e.getPay());
     }
 
     @Test
@@ -47,7 +47,7 @@ class EmployeeTest {
         e.setHours(2,8);
         e.setHours(3,4);
         e.setHours(5,8);
-        Assertions.assertEquals(360, e.getPay());
+        Assertions.assertEquals(440, e.getPay());
     }
 
     @Test
@@ -58,7 +58,7 @@ class EmployeeTest {
         e.setHours(2,12);
         e.setHours(3,12);
         e.setHours(5,12);
-        Assertions.assertEquals(600, e.getPay());
+        Assertions.assertEquals(760, e.getPay());
     }
 
     @Test
@@ -91,7 +91,7 @@ class EmployeeTest {
         e.setHours(2,10);
         e.setHours(3,10);
         e.setHours(4,10);
-        Assertions.assertEquals(500, e.getPay());
+        Assertions.assertEquals(550, e.getPay());
     }
 
     @Test
@@ -102,7 +102,7 @@ class EmployeeTest {
         e.setHours(2,7);
         e.setHours(3,7);
         e.setHours(5,7);
-        Assertions.assertEquals(350, e.getPay());
+        Assertions.assertEquals(420, e.getPay());
     }
 
     @Test
@@ -114,7 +114,7 @@ class EmployeeTest {
         e.setHours(3,10);
         e.setHours(4,6);
         e.setHours(5,10);
-        Assertions.assertEquals(560, e.getPay());
+        Assertions.assertEquals(690, e.getPay());
     }
 
     @Test
@@ -127,7 +127,7 @@ class EmployeeTest {
         e.setHours(4,1);
         e.setHours(5,7);
         e.setHours(6,7);
-        Assertions.assertEquals(380, e.getPay());
+        Assertions.assertEquals(570, e.getPay());
     }
 
     @Test
@@ -140,6 +140,6 @@ class EmployeeTest {
         e.setHours(4,4);
         e.setHours(5,10);
         e.setHours(6,10);
-        Assertions.assertEquals(600, e.getPay());
+        Assertions.assertEquals(850, e.getPay());
     }
 }
